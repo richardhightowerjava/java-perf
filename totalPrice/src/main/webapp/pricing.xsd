@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/pricing"
+	xmlns:tns="http://www.example.org/pricing" elementFormDefault="qualified">
+
+    <element name="prices">
+      <complexType>
+    		<sequence>
+    			<element name="price" maxOccurs="unbounded">
+					<complexType>
+						<sequence>
+							<element name="qty" type="integer" />
+							<element name="price" type="float" />
+						</sequence>
+					</complexType>
+				</element>
+    		</sequence>
+		</complexType>
+    </element>
+
+</schema>
